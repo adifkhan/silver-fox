@@ -1,0 +1,24 @@
+.about_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding: 2rem 8rem;
+  color: var(--secondary-color);
+}
+.about_img {
+}
+.about_content {
+  width: 450px;
+}
+.about_content h2 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+.about_content p {
+  font-size: 1.6rem;
+  margin: 1.8rem 0;
+}
+.about_content span {
+  margin-right: 1.2rem;
+  color: rgb(9, 211, 9);
+}

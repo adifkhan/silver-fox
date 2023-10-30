@@ -1,0 +1,29 @@
+.banner_container {
+  margin-top: 76px;
+}
+.slider_container {
+}
+.slider_wrapper {
+  position: relative;
+}
+.bannerImg {
+}
+.banner_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.banner_details {
+  width: 40%;
+  text-align: left;
+  color: var(--light-color);
+  margin: 10rem 0 0 5rem;
+}
+.banner_details h2 {
+  font-size: 5rem;
+}
+.banner_icon {
+}

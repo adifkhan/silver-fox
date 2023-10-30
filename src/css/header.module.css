@@ -1,0 +1,40 @@
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 8rem;
+  background: var(--primary-color);
+  color: var(--light-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.logo h2 {
+  font-size: 3rem;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  font-weight: 600;
+  color: var(--light-color);
+  transition: all 0.4s;
+}
+.navbar a:hover {
+  color: var(--accent-color);
+}

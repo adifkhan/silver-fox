@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #1f242d;
+  --secondary-color: #2b3341;
+  --accent-color: #ffbd00;
+  --light-color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* global components styles */
+.button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+  background: var(--accent-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.heading h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+/* banner slider styles */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
