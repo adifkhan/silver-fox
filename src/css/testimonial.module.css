@@ -13,6 +13,7 @@
 .slider_card img {
   width: 120px;
   filter: drop-shadow(5px 5px 0.8rem rgb(0, 0, 0, 0.4));
+  animation: float 3.55s ease-in-out infinite;
 }
 .slider_card p {
   font-size: 1.8rem;
@@ -25,6 +26,18 @@
   font-weight: 500;
   color: var(--primary-color);
   margin-bottom: 1rem;
+}
+/* KEYFRAME ANIMATION  */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 /* ------------Responsivness---------- */
 @media (max-width: 1200px) {

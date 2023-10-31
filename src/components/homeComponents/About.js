@@ -1,16 +1,48 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "../../css/about.module.css";
 import { TiTick } from "react-icons/ti";
 import aboutImg from "../../assets/about.png";
 
+// using GSAP to animate user interface
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 const About = () => {
+  // animation defination //
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.from(".ab_img", {
+        x: -300,
+        opacity: 0.5,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".ab_img",
+          start: "top 95%",
+          end: "top 40%",
+          scrub: 1,
+        },
+      });
+      gsap.from(".ab_btn", {
+        x: 300,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".ab_btn",
+          start: "top 100%",
+          end: "top 80%",
+          scrub: true,
+        },
+      });
+    });
+    return () => ctx.revert();
+  }, []);
   return (
     <div className={style.about_container} id="about">
       <div className="heading">
         <h2>About Us</h2>
       </div>
       <div className={style.about_wrapper}>
-        <div className={style.about_img}>
+        <div className={`${style.about_img} ab_img`}>
           <img src={aboutImg} alt="about" />
         </div>
         <div className={style.about_content}>
@@ -41,7 +73,7 @@ const About = () => {
               Labore quaerat esse
             </p>
           </div>
-          <button className="button">Learn More</button>
+          <button className="button ab_btn">Learn More</button>
         </div>
       </div>
     </div>

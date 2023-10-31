@@ -1,9 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "../../css/feedback.module.css";
 import gift_card from "../../assets/gift_card.png";
 import userImg from "../../assets/testimonials/person_2.png";
 
+// using GSAP to animate user interface
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 const Feedback = () => {
+  // animation defination //
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.from(".feed_img", {
+        x: 300,
+        opacity: 0.7,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".feed_img",
+          start: "top 95%",
+          end: "top 40%",
+          scrub: 1,
+        },
+      });
+      gsap.from(".user_box", {
+        x: -300,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".user_box",
+          start: "top 80%",
+          end: "top 50%",
+          scrub: 1,
+        },
+      });
+    });
+    return () => ctx.revert();
+  }, []);
   return (
     <div className={style.feedback_container} id="feedback">
       <div className={style.feedback_contents}>
@@ -14,7 +46,7 @@ const Feedback = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
           neque nisi architecto autem molestias corrupti officia veniam.
         </p>
-        <div className={style.user_wrapper}>
+        <div className={`${style.user_wrapper} user_box`}>
           <div className={style.user_details}>
             <img src={userImg} alt="user" />
             <div className={style.user_info}>
@@ -30,7 +62,7 @@ const Feedback = () => {
           </p>
         </div>
       </div>
-      <div className={style.feedback_img}>
+      <div className={`${style.feedback_img} feed_img`}>
         <img src={gift_card} alt="gift card" />
       </div>
     </div>

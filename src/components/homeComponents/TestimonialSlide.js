@@ -24,7 +24,7 @@ const TestimonialSlide = ({ testimonials }) => {
     >
       {testimonials.map((item, index) => (
         <SwiperSlide key={index} className={style.slider_card}>
-          <img src={item.img} alt="" />
+          <img src={item.img} alt="our user" />
           <p>{item.description}</p>
           <h4>{item.name}</h4>
         </SwiperSlide>

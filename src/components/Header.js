@@ -88,7 +88,11 @@ const Header = () => {
       >
         {navItems.map((item, index) => (
           //used hashlink to navigate through sections
-          <Link key={index} to={item.link}>
+          <Link
+            key={index}
+            to={item.link}
+            onClick={() => setMenuToggle(!menuToggle)}
+          >
             {item.label}
           </Link>
         ))}
