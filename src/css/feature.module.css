@@ -32,6 +32,7 @@
   align-items: center;
   justify-content: center;
   transition: 0.4s;
+  animation: float 3.55s ease-in-out infinite;
 }
 .feature_card:hover {
   transform: translateY(-10px);
@@ -52,6 +53,19 @@
 .feature_card p {
   font-size: 1.4rem;
   margin: 1rem 0;
+}
+
+/* KEYFRAME ANIMATION  */
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* ------------Responsivness---------- */

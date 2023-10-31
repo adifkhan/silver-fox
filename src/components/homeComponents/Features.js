@@ -54,7 +54,7 @@ const Features = () => {
   useEffect(() => {
     let ctx = gsap.context(() => {
       gsap.from(".feat_card", {
-        y: 200,
+        y: 300,
         opacity: 0,
         ease: "none",
         stagger: 1,
