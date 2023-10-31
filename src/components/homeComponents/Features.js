@@ -43,7 +43,7 @@ const featureItems = [
     icon: <FaPlug />,
   },
 ];
-// MdAddBusiness
+
 const Features = () => {
   return (
     <div className={style.features_container} id="features">
@@ -56,7 +56,7 @@ const Features = () => {
             <div className={style.icon}>{item.icon}</div>
             <h3>{item.title}</h3>
             <p>{item.details}</p>
-            <button className={`${style.button} button`}>Learn More</button>
+            <button className={`${style.button} button`}>See More</button>
           </div>
         ))}
       </div>

@@ -42,9 +42,6 @@
   display: flex;
   justify-content: flex-end;
 }
-/* .banner_icon img {
-  width: 90%;
-} */
 
 /* ----------------animation--------------- */
 @keyframes zoomIn {
@@ -83,11 +80,11 @@
     padding: 0 2rem;
   }
   .banner_details h2 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     line-height: 30px;
   }
   .banner_details p {
-    margin: 0.5rem 0;
+    margin: 1rem 0 0;
     font-size: 1.4rem;
   }
 }

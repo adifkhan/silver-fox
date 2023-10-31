@@ -1,17 +1,17 @@
 .features_container {
-  padding: 5rem;
+  padding: 7.2rem 5rem 2rem;
 }
 .features_wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 100px 25px;
+  gap: 100px 30px;
   margin-top: 8rem;
   color: var(--primary-color);
 }
 .feature_card {
   flex: 0 0 350px;
-  padding: 5rem 1rem 1rem;
+  padding: 5rem 1rem 2rem;
   text-align: center;
   border: 1px solid var(--accent-color);
   border-radius: 5px;
@@ -52,4 +52,30 @@
 .feature_card p {
   font-size: 1.4rem;
   margin: 1rem 0;
+}
+
+/* ------------Responsivness---------- */
+@media (max-width: 960px) {
+  .features_container {
+    padding: 7.2rem 3rem 0;
+  }
+  .features_wrapper {
+    gap: 80px 20px;
+  }
+  .feature_card {
+    flex: 0 0 320px;
+  }
+}
+@media (max-width: 680px) {
+  .features_wrapper {
+    gap: 70px 20px;
+  }
+  .feature_card {
+    flex: 0 0 350px;
+  }
+}
+@media (max-width: 430px) {
+  .feature_card {
+    flex: 0 0 100%;
+  }
 }
