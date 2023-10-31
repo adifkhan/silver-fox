@@ -9,33 +9,33 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Feedback = () => {
-  // animation defination //
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.from(".feed_img", {
-        x: 300,
-        opacity: 0.7,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".feed_img",
-          start: "top 95%",
-          end: "top 40%",
-          scrub: 1,
-        },
-      });
-      gsap.from(".user_box", {
-        x: -300,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".user_box",
-          start: "top 80%",
-          end: "top 50%",
-          scrub: 1,
-        },
-      });
-    });
-    return () => ctx.revert();
-  }, []);
+  // // animation defination //
+  // useEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     // gsap.from(".feed_img", {
+  //     //   x: 300,
+  //     //   opacity: 0.7,
+  //     //   ease: "none",
+  //     //   scrollTrigger: {
+  //     //     trigger: ".feed_img",
+  //     //     start: "top 95%",
+  //     //     end: "top 40%",
+  //     //     scrub: 1,
+  //     //   },
+  //     // });
+  //     gsap.from(".user_box", {
+  //       x: 200,
+  //       ease: "none",
+  //       scrollTrigger: {
+  //         trigger: ".user_box",
+  //         start: "top 80%",
+  //         end: "top 50%",
+  //         scrub: 1,
+  //       },
+  //     });
+  //   });
+  //   return () => ctx.revert();
+  // }, []);
   return (
     <div className={style.feedback_container} id="feedback">
       <div className={style.feedback_contents}>

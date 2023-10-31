@@ -9,33 +9,33 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  // animation defination //
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.from(".ab_img", {
-        x: -300,
-        opacity: 0.5,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".ab_img",
-          start: "top 95%",
-          end: "top 40%",
-          scrub: 1,
-        },
-      });
-      gsap.from(".ab_btn", {
-        x: 300,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".ab_btn",
-          start: "top 100%",
-          end: "top 80%",
-          scrub: true,
-        },
-      });
-    });
-    return () => ctx.revert();
-  }, []);
+  // // animation defination //
+  // useEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     gsap.from(".ab_img", {
+  //       scale: 0.3,
+  //       opacity: 0.5,
+  //       ease: "none",
+  //       scrollTrigger: {
+  //         trigger: ".ab_img",
+  //         start: "top 95%",
+  //         end: "top 40%",
+  //         scrub: 1,
+  //       },
+  //     });
+  //     gsap.from(".ab_btn", {
+  //       x: 100,
+  //       ease: "none",
+  //       scrollTrigger: {
+  //         trigger: ".ab_btn",
+  //         start: "top 100%",
+  //         end: "top 80%",
+  //         scrub: true,
+  //       },
+  //     });
+  //   });
+  //   return () => ctx.revert();
+  // }, []);
   return (
     <div className={style.about_container} id="about">
       <div className="heading">
