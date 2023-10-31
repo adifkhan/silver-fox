@@ -1,14 +1,12 @@
 .banner_container {
-  margin-top: 75px;
+  margin-top: 72px;
 }
 .slider_wrapper {
   position: relative;
   overflow: hidden;
-  height: 800px;
 }
 .bannerImg {
   width: 100%;
-  height: 100%;
   animation: zoomIn 8s ease 0.3s 1 normal forwards;
 }
 .banner_content {
@@ -30,10 +28,14 @@
   justify-content: center;
 }
 .banner_details h2 {
+  font-weight: 500;
   font-size: 5rem;
 }
 .banner_details p {
   margin: 2rem 0;
+}
+.banner_details button {
+  margin: 2rem 0 0;
 }
 .banner_icon {
   width: 50%;
@@ -81,7 +83,7 @@
     padding: 0 2rem;
   }
   .banner_details h2 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     line-height: 30px;
   }
   .banner_details p {
@@ -90,4 +92,10 @@
   }
 }
 @media (max-width: 480px) {
+  .banner_details p {
+    display: none;
+  }
+  .banner_details button {
+    margin: 1.5rem 0 0;
+  }
 }
