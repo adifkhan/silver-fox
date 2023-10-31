@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/silverfox.png";
 import style from "../css/header.module.css";
 import { HashLink as Link } from "react-router-hash-link";
+import { RiCloseLine, RiMenuLine } from "react-icons/ri";
 
+// navigation menu information //
 const navItems = [
   {
     label: "Home",
@@ -21,20 +23,16 @@ const navItems = [
     link: "#about",
   },
   {
-    label: "Home",
-    link: "#home",
+    label: "Team",
+    link: "#team",
   },
   {
-    label: "Home",
-    link: "#home",
+    label: "Testimonials",
+    link: "#testimonials",
   },
   {
-    label: "Home",
-    link: "#home",
-  },
-  {
-    label: "Home",
-    link: "#home",
+    label: "Blog",
+    link: "#blog",
   },
   {
     label: "Home",
@@ -43,12 +41,35 @@ const navItems = [
 ];
 
 const Header = () => {
+  const [menuToggle, setMenuToggle] = useState(false);
   return (
     <header className={style.header_container}>
+      <div
+        className={
+          menuToggle
+            ? `${style.disabled__menu_icon}`
+            : `${style.active__menu_icon}`
+        }
+        onClick={() => setMenuToggle(!menuToggle)}
+      >
+        <RiMenuLine />
+      </div>
+      <div
+        className={
+          menuToggle
+            ? `${style.active__menu_icon}`
+            : `${style.disabled__menu_icon}`
+        }
+        onClick={() => setMenuToggle(!menuToggle)}
+      >
+        <RiCloseLine />
+      </div>
       <div className={style.logo}>
         <img src={logo} alt="silver fox logo" />
         <h2>Silver Fox</h2>
       </div>
+
+      {/* navigation bar for medium and large devices  */}
       <nav className={style.navbar}>
         {navItems.map((item, index) => (
           //used hashlink to navigate through sections
@@ -56,6 +77,22 @@ const Header = () => {
             {item.label}
           </Link>
         ))}
+        <button className="button">Sing Up</button>
+      </nav>
+
+      {/* side navigation bar for medium and small devices  */}
+      <nav
+        className={
+          menuToggle ? `${style.mini_navbar}` : `${style.collapsed_navbar}`
+        }
+      >
+        {navItems.map((item, index) => (
+          //used hashlink to navigate through sections
+          <Link key={index} to={item.link}>
+            {item.label}
+          </Link>
+        ))}
+        <button className="button">Sing Up</button>
       </nav>
     </header>
   );

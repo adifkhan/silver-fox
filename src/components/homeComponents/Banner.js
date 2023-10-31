@@ -1,18 +1,21 @@
 import React from "react";
 import style from "../../css/banner.module.css";
 import BannerSlide from "./BannerSlide";
+import bg1 from "../../assets/banner/bg1.jpg";
 import bg2 from "../../assets/banner/bg2.jpg";
 import bg3 from "../../assets/banner/bg3.jpg";
 import bg4 from "../../assets/banner/bg4.jpg";
-import bg5 from "../../assets/banner/bg5.jpg";
-import icon1 from "../../assets/banner/icon1.png";
+import icon1 from "../../assets/banner/icon_1.png";
+import icon2 from "../../assets/banner/icon_2.png";
+import icon3 from "../../assets/banner/icon_3.png";
+import icon4 from "../../assets/banner/icon_4.png";
 
 const bannerItems = [
   {
     title: "Make Your Business More Profitable",
     details:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.",
-    bannerImg: bg4,
+    bannerImg: bg1,
     icon: icon1,
   },
   {
@@ -20,21 +23,21 @@ const bannerItems = [
     details:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.",
     bannerImg: bg2,
-    icon: icon1,
+    icon: icon2,
   },
   {
     title: "Make Your Business More Profitable",
     details:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.",
     bannerImg: bg3,
-    icon: icon1,
+    icon: icon3,
   },
   {
     title: "Make Your Business More Profitable",
     details:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.",
-    bannerImg: bg5,
-    icon: icon1,
+    bannerImg: bg4,
+    icon: icon4,
   },
 ];
 

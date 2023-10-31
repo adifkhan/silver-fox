@@ -6,6 +6,12 @@
   color: var(--secondary-color);
 }
 .about_img {
+  width: 500px;
+}
+.about_img svg {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .about_content {
   width: 450px;
