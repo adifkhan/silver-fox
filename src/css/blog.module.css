@@ -1,5 +1,5 @@
 .blog_container {
-  padding: 7.2rem 6rem 2rem;
+  padding: 7.2rem 6rem 5rem;
 }
 .blog_wrapper {
   display: flex;
@@ -36,7 +36,7 @@
 }
 @media (max-width: 960px) {
   .blog_container {
-    padding: 7.2rem 4rem 2rem;
+    padding: 7.2rem 4rem 5rem;
   }
 }
 @media (max-width: 750px) {
@@ -46,7 +46,7 @@
 }
 @media (max-width: 480px) {
   .blog_container {
-    padding: 7.2rem 3rem 2rem;
+    padding: 7.2rem 3rem 5rem;
   }
   .post_card {
     flex: 0 0 100%;

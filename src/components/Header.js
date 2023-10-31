@@ -15,16 +15,16 @@ const navItems = [
     link: "#features",
   },
   {
-    label: "Home",
-    link: "#home",
-  },
-  {
     label: "About",
     link: "#about",
   },
   {
     label: "Team",
     link: "#team",
+  },
+  {
+    label: "Feedback",
+    link: "#feedback",
   },
   {
     label: "Testimonials",
@@ -35,8 +35,8 @@ const navItems = [
     link: "#blog",
   },
   {
-    label: "Home",
-    link: "#home",
+    label: "Contact",
+    link: "#contact",
   },
 ];
 
