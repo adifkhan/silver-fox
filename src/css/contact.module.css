@@ -1,15 +1,15 @@
 .contact_container {
-  background-image: url("../assets/worldmap.jpg");
+  background-image: url("../assets/contact.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 4rem 0;
+  padding: 4rem;
 }
 .contact_form {
   width: 500px;
   margin: 2rem auto;
-  padding: 5rem;
+  padding: 3rem;
   backdrop-filter: blur(7px);
   border-radius: 10px;
   color: var(--light-color);
@@ -45,4 +45,19 @@
   background: transparent;
   color: var(--light-color);
   border: 1px solid var(--accent-color);
+}
+.contact_form input[type="submit"] {
+  margin-top: 2rem;
+}
+
+/* ------------Responsivness---------- */
+@media (max-width: 580px) {
+  .contact_form {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .contact_container {
+    padding: 4rem 2rem;
+  }
 }

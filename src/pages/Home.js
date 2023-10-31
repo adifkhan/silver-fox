@@ -14,9 +14,9 @@ const Home = () => {
       <Features />
       <About />
       <OurTeam />
-      {/* <Testimonial /> */}
-      {/* <BlogPost /> */}
-      {/* <Contact /> */}
+      <Testimonial />
+      <BlogPost />
+      <Contact />
     </div>
   );
 };

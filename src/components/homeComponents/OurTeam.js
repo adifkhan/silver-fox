@@ -1,6 +1,11 @@
 import React from "react";
 import style from "../../css/ourteam.module.css";
 import person1 from "../../assets/team/person_1.jpg.jpg";
+import person2 from "../../assets/team/person_2.jpg.jpg";
+import person3 from "../../assets/team/person_3.jpg.jpg";
+import person4 from "../../assets/team/person_4.jpg.jpg";
+import person5 from "../../assets/team/person_5.jpg.jpg";
+import person6 from "../../assets/team/person_6.jpg.jpg";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const teamMembers = [
@@ -16,35 +21,35 @@ const teamMembers = [
     role: "FOUNDER",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.",
-    img: person1,
+    img: person2,
   },
   {
     name: "George Brook",
     role: "FINANCING",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.",
-    img: person1,
+    img: person3,
   },
   {
     name: "John Rooster",
     role: "MARKETING",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.",
-    img: person1,
+    img: person4,
   },
   {
     name: "Cloe Marena",
     role: "MARKETING",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.",
-    img: person1,
+    img: person5,
   },
   {
     name: "Will Turner",
     role: "MARKETING",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.",
-    img: person1,
+    img: person6,
   },
 ];
 

@@ -4,7 +4,6 @@ import { SiConsul, SiContentful, SiIconfinder } from "react-icons/si";
 import { GiConcentrationOrb, GiContortionist } from "react-icons/gi";
 import { TfiThemifyFavicon } from "react-icons/tfi";
 import { Link } from "react-router-dom";
-// import { SiIcon } from "react-icons/si";
 import { BsGlobe2 } from "react-icons/bs";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { FaFacebookSquare, FaLinkedinIn } from "react-icons/fa";
@@ -54,14 +53,14 @@ export default function Footer() {
         <div className={style.content_wrapper}>
           <div className={style.footer_contents}>
             <div className={style.content_category}>
-              <h2>Our services</h2>
+              <h2>Our Services</h2>
               <ul>
                 <li>Advertisement</li>
                 <li>Hosting</li>
                 <li>Marketing</li>
                 <li>SEO</li>
                 <li>Boosting</li>
-                <li>Web Development</li>
+                <li>Development</li>
               </ul>
             </div>
             <div className={style.content_category}>
@@ -76,7 +75,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className={style.content_category}>
-              <h2>Beloved Clients</h2>
+              <h2>Our Clients</h2>
               <ul>
                 <li>Sheba Epo</li>
                 <li>United Pillo</li>

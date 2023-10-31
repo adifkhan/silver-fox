@@ -102,6 +102,17 @@
   }
 }
 @media (max-width: 768px) {
+  .collapsed_navbar,
+  .mini_navbar {
+    top: 65px;
+  }
+  .logo img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .logo h2 {
+    font-size: 2.4rem;
+  }
   .header_container {
     padding: 1.5rem 2rem;
   }

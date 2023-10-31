@@ -76,6 +76,9 @@
   }
 }
 @media (max-width: 768px) {
+  .banner_container {
+    margin-top: 65px;
+  }
   .banner_content {
     padding: 0 2rem;
   }

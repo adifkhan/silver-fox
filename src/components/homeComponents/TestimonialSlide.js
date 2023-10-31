@@ -16,7 +16,7 @@ const TestimonialSlide = ({ testimonials }) => {
         clickable: true,
       }}
       autoplay={{
-        delay: 3500,
+        delay: 4000,
         disableOnInteraction: false,
       }}
       modules={[Pagination, Autoplay]}
