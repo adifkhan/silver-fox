@@ -63,7 +63,6 @@ const Features = () => {
           start: "top 100%",
           end: "top 40%",
           scrub: 1,
-          markers: true,
         },
       });
     });
