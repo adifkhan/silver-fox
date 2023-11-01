@@ -1,5 +1,6 @@
 .about_container {
   padding: 7.2rem 8rem 2rem;
+  overflow-x: hidden;
 }
 .about_wrapper {
   display: flex;
@@ -48,7 +49,7 @@
 }
 @media (max-width: 768px) {
   .about_wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .about_img {
     width: 100%;

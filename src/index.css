@@ -20,7 +20,22 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
 }
-
+/* ---------scrollbar customization-------------- */
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--primary-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border: 2px solid transparent;
+  background-clip: content-box;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--light-color);
+}
 /* -----------Shared components styles----------- */
 .button {
   padding: 1rem 2rem;

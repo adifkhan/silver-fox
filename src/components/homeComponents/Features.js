@@ -57,7 +57,7 @@ const Features = () => {
         y: 300,
         opacity: 0,
         ease: "none",
-        stagger: 1,
+        stagger: 0.3,
         scrollTrigger: {
           trigger: ".feat_card",
           start: "top 95%",
