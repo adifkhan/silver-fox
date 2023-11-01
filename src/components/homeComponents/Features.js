@@ -57,12 +57,13 @@ const Features = () => {
         y: 300,
         opacity: 0,
         ease: "none",
-        stagger: 0.3,
+        stagger: 1,
         scrollTrigger: {
           trigger: ".feat_card",
-          start: "top 95%",
-          end: "top 10%",
+          start: "top 100%",
+          end: "top 40%",
           scrub: 1,
+          markers: true,
         },
       });
     });
