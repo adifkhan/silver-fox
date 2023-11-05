@@ -61,7 +61,7 @@ const Features = () => {
         scrollTrigger: {
           trigger: ".feat_card",
           start: "top 100%",
-          end: "top 70%",
+          end: "top 60%",
           scrub: true,
         },
       });
